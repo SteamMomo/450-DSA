@@ -7,6 +7,7 @@ class Solution
 {
     public:
     //Function to return a list of integers denoting spiral traversal of matrix.
+    //Approach-1: ----
     vector<int> spirallyTraverse(vector<vector<int> > matrix, int r, int c)
     {
         // code here
