@@ -35,6 +35,7 @@ public:
 //else
 //increment i by one (go to next coloumn)
 //at last return the index.
+//Time complexity: O(n+m), Space complexity: O(1)
 int rowWithMax1s2(vector<vector<int> > arr, int n, int m) {
 	    // code here
 	    int i=0, j=m-1;
