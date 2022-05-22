@@ -37,6 +37,6 @@ freopen("output.txt", "w", stdout);
 
 int main (){
 	andar_bahar();
-
+	
 	return 0;
 }
