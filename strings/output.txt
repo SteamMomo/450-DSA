@@ -1,2 +1,15 @@
-1211
-1211
+ABCD
+ABC
+ABD
+AB
+ACD
+AC
+AD
+A
+BCD
+BC
+BD
+B
+CD
+C
+D
