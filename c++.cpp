@@ -37,32 +37,21 @@ freopen("output.txt", "w", stdout);
 
 int main (){
 	andar_bahar();
-	int cnt=1;
-	wt(t){
-		int n=0;
-		cin>>n;
-		string s;
-		cin>>s;
-		if(n%2==1) {
-			int cnt=0;
-			int i = (n/2);
-			char c = s[i];
-			while(s[i]==c && i>=0) {
-				cnt++;
-				i--;
-			}
-			cout<<max(1, (cnt*2)+1)<<endl;
+	int c0=0;
+	int c1=0;
+	string s;
+	cin>>s;
+	int n = s.length();
+	int ans=0;
+	for(int i=0; i<n; i++){
+		if(c0==c1) {
+			ans++;
+			c0=0;c1=0;
 		}
-		else{
-			int cnt=0;
-			int i = (n/2)-1;
-			char c = s[i];
-			while(s[i]==c && i>=0) {
-				cnt++;
-				i--;
-			}
-			cout<<max(2, cnt*2)<<endl;
-		}
+		if(s[i]=='1') c1++;
+		else c0++;
 	}
+	if(c0!=c1) ans = -1;
+	cout<<ans;
 	return 0;
 }
